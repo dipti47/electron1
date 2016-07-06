@@ -1,0 +1,51 @@
+<html ng-app="cdg">
+<head>
+	<title>Kiara</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+
+	<!-- jQuery -->
+	<script>window.$ = window.jQuery = require('jquery');</script>
+
+	<!-- Bootstrap -->
+	<script src="bootstrap/js/bootstrap.js"></script>
+
+	<!-- Angular -->
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/angular/angular-ui-router.min.js"></script>	
+	<!-- Angular - Pagination -->
+	<script src="node_modules/angular-utils-pagination/dirPagination.js"></script>
+	<script src="node_modules/angular-cookies/angular-cookies.js"></script>
+	<script src="node_modules/angular-translate/dist/angular-translate.js"></script>
+	<script src="node_modules/angular-translate/dist/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+	<script src="node_modules/angular-translate/dist/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+	<script src="node_modules/angular-translate/dist/angular-translate-storage-local/angular-translate-storage-local.js"></script>
+
+	<!-- App -->
+	<script src="app.js"></script>
+
+	<!-- Controllers -->
+	<script src="controllers/homeController.js"></script>
+	<script src="controllers/pessoaController.js"></script>
+	<script src="controllers/errorController.js"></script>
+	<script src="common/services.js"></script>
+	
+
+	<!-- Services -->
+	<script src="services/dbService.js"></script>
+	<script src="services/scriptDbAnagrafica.js"></script>
+	<script src="services/scriptDbComanda.js"></script>
+	<script src="services/scriptDbInventario.js"></script>
+	<script src="services/scriptDbParametri.js"></script>
+	<script src="services/scriptDbProgressivoNegozio.js"></script>
+	<script src="services/scriptDbPromo.js"></script>
+	<script src="services/scriptDbScontrini.js"></script>
+</head>
+<body>
+	<!-- Menu -->
+
+	<!-- Onde será carregada a view -->
+	<div class="container">       
+		<div ui-view="kiaraview"></div>
+	</div>
+</body>
+</html>

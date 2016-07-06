@@ -1,0 +1,14 @@
+
+	<img src="./images/device-2016-05-16-103833.png" width="1100px" height="600px" style="float:left;" />
+    <loading></loading>
+	<div class="col-sm-6 col-md-6 pull-left">
+        <form class="navbar-form" role="search" name="srchLicensefrm">
+            <div class="input-group">
+            <input type="hidden" ng-model="licenseres">
+            <input type="text" class="form-control" ng-model="license.licensecode" ng-class="{submitted:licensecode.submitted}" name="licensecode" class="form-control" id="licensecode"  placeholder="Please enter license code." required ng-minlength="3"/> 
+                <div class="input-group-btn">
+                    <input class="btn btn-default" type="submit" ng-click="checklicenseno()"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>        
